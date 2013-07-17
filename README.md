@@ -1,6 +1,6 @@
 #ParallaxTableView
 
-Parallax scrolling for iOS. 
+A table view with a moving background (parallax effect).. 
 
 
 ## Usage
