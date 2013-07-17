@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  ParallaxScrollSpeed
+ *
+ *  Adjusts the delta in movement between tableview scrolling
+ *  and the amount the background moves
+ */
+typedef enum {
+    ParallaxScrollSpeedFast = 2,
+    ParallaxScrollSpeedNormal, // default speeed
+    ParallaxScrollSpeedSlow,
+} ParallaxScrollSpeed;
 
 
 @interface ParallaxTableView : UITableView <UITableViewDelegate> {
@@ -21,5 +32,6 @@
 
 @property (weak, nonatomic) id <UITableViewDelegate> parallaxDelegate;
 @property (strong, nonatomic) UIImageView *parallaxImageView;
+@property (assign, nonatomic) ParallaxScrollSpeed parallaxScrollSpeed;
 
 @end

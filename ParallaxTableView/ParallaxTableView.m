@@ -8,12 +8,12 @@
 
 #import "ParallaxTableView.h"
 
-static CGFloat const parallaxSlownessModifier = 3; // higher == slower
-
 @implementation ParallaxTableView
 
 @synthesize parallaxDelegate = _parallaxDelegate;
 @synthesize parallaxImageView = _parallaxImageView;
+@synthesize parallaxScrollSpeed = _parallaxScrollSpeed;
+
 
 - (id)initWithFrame:(CGRect)frame_
       parallaxImage:(UIImage *)parallaxImage_
@@ -27,6 +27,8 @@ static CGFloat const parallaxSlownessModifier = 3; // higher == slower
         _parallaxImageView.frame = frame_;
         [self.backgroundView addSubview:_parallaxImageView];        
         [self setDelegate:self];
+        
+        self.parallaxScrollSpeed = ParallaxScrollSpeedNormal;
     }
     return self;
 }
@@ -34,7 +36,7 @@ static CGFloat const parallaxSlownessModifier = 3; // higher == slower
 -(void) updateParallexOffset
 {
     CGRect frame = _parallaxImageView.frame;
-    frame.origin.y = parallaxOffsetY / parallaxSlownessModifier;
+    frame.origin.y = parallaxOffsetY / _parallaxScrollSpeed;
     [UIView animateWithDuration:.05 animations:^{
         [_parallaxImageView setFrame:frame];
     }];

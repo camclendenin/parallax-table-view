@@ -18,8 +18,6 @@
 {
     [super viewDidLoad];
     
-    self.title = @"My Favorite Places";
-    
     myFavoritePlacesArray = @[@"Napili, Hawaii", @"Tamarindo, Costa Rica", @"Venice, Italia", @"Edinburgh, Scottland", @"Brittany, France", @"Poipu, Hawaii", @"Yosemite National Park", @"Big Sur", @"Joshua Tree", @"Monte Verde, Costa Rica"];
     
     tableView = [[ParallaxTableView alloc] initWithFrame:self.view.bounds
