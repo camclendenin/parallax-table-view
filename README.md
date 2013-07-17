@@ -7,7 +7,7 @@ Parallax scrolling for iOS.
 
 In whichever class you need your parallax table view:
 
-    #include "ParallaxTableView.h"
+    #import "ParallaxTableView.h"
 
 Instantiate the parallax table:
   
