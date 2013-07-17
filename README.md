@@ -2,6 +2,8 @@
 
 A table view with a moving background (parallax effect).. 
 
+![ParallaxTableView sample](https://dl.dropbox.com/s/arujryzugb9mlfb/parallaxdemo.gif "ParallaxTableView in action")
+
 
 ## Usage
 
