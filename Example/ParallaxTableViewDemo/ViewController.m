@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    myFavoritePlacesArray = @[@"Napili, Hawaii", @"Tamarindo, Costa Rica", @"Venice, Italia", @"Edinburgh, Scottland", @"Brittany, France", @"Poipu, Hawaii", @"Yosemite National Park", @"Big Sur", @"Joshua Tree", @"Monte Verde, Costa Rica"];
+    myFavoritePlacesArray = @[@"Napili, Hawaii", @"Tamarindo, Costa Rica", @"Venice, Italia", @"Edinburgh, Scottland", @"Brittany, France", @"Poipu, Hawaii", @"Yosemite National Park", @"Big Sur", @"Joshua Tree", @"Monte Verde, Costa Rica", @"Berlin, Germany", @"Melbourne, Australia", @"This", @"is", @"a", @"long", @"list", @"of", @"stuff.", @"The", @"longer", @"the", @"list", @"the", @"cooler", @"it", @"looks!"];
     
     tableView = [[ParallaxTableView alloc] initWithFrame:self.view.bounds
                                            parallaxImage:[UIImage imageNamed:@"jungle.jpg"]
