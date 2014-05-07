@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603F7C97191A0D43000F2A55 /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 603F7C96191A0D43000F2A55 /* nyc.jpg */; };
 		750A3F401795E27500CA2F91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750A3F3F1795E27500CA2F91 /* UIKit.framework */; };
 		750A3F421795E27500CA2F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750A3F411795E27500CA2F91 /* Foundation.framework */; };
 		750A3F441795E27500CA2F91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750A3F431795E27500CA2F91 /* CoreGraphics.framework */; };
@@ -19,10 +20,10 @@
 		750A3F591795E27600CA2F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750A3F581795E27600CA2F91 /* ViewController.m */; };
 		750A3F5C1795E27600CA2F91 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 750A3F5A1795E27600CA2F91 /* ViewController.xib */; };
 		750A3F6E179653BA00CA2F91 /* ParallaxTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750A3F6D179653BA00CA2F91 /* ParallaxTableView.m */; };
-		750A3F751796704500CA2F91 /* rainforest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3F741796704500CA2F91 /* rainforest.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603F7C96191A0D43000F2A55 /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nyc.jpg; sourceTree = "<group>"; };
 		750A3F3C1795E27500CA2F91 /* ParallaxTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750A3F3F1795E27500CA2F91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		750A3F411795E27500CA2F91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,7 +42,6 @@
 		750A3F5B1795E27600CA2F91 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		750A3F6C179653BA00CA2F91 /* ParallaxTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxTableView.h; sourceTree = "<group>"; };
 		750A3F6D179653BA00CA2F91 /* ParallaxTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxTableView.m; sourceTree = "<group>"; };
-		750A3F741796704500CA2F91 /* rainforest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainforest.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 		750A3F461795E27500CA2F91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				750A3F741796704500CA2F91 /* rainforest.jpg */,
+				603F7C96191A0D43000F2A55 /* nyc.jpg */,
 				750A3F471795E27500CA2F91 /* ParallaxTableViewDemo-Info.plist */,
 				750A3F481795E27500CA2F91 /* InfoPlist.strings */,
 				750A3F4B1795E27500CA2F91 /* main.m */,
@@ -180,7 +180,7 @@
 				750A3F541795E27600CA2F91 /* Default@2x.png in Resources */,
 				750A3F561795E27600CA2F91 /* Default-568h@2x.png in Resources */,
 				750A3F5C1795E27600CA2F91 /* ViewController.xib in Resources */,
-				750A3F751796704500CA2F91 /* rainforest.jpg in Resources */,
+				603F7C97191A0D43000F2A55 /* nyc.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxTableViewDemo/ParallaxTableViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxTableViewDemo/ParallaxTableViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +294,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxTableViewDemo/ParallaxTableViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxTableViewDemo/ParallaxTableViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

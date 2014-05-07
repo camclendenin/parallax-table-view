@@ -21,11 +21,13 @@
 {
     self = [super initWithFrame:frame_ style:UITableViewStyleGrouped];
     if (self) {
+        self.backgroundView = [UIView new];
         self.parallaxDelegate = parallaxDelegate_;
         _parallaxImageView = [[UIImageView alloc] initWithImage:parallaxImage_];
-        _parallaxImageView.contentMode = UIViewContentModeCenter;
+        _parallaxImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _parallaxImageView.clipsToBounds = NO;
         _parallaxImageView.frame = frame_;
-        [self.backgroundView addSubview:_parallaxImageView];        
+        [self.backgroundView addSubview:_parallaxImageView];
         [self setDelegate:self];
         
         self.parallaxScrollSpeed = ParallaxScrollSpeedNormal;
